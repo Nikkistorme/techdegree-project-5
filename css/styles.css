@@ -332,6 +332,38 @@ template {
 
 body {
   text-align: center;
+  font-family: "Lato", sans-serif;
+  margin: 50px 30px;
+}
+
+header {
+  margin-bottom: 50px;
+}
+
+.search-bar {
+  border: solid #eaeaea;
+  width: 90%;
+  max-width: 430px;
+  border-radius: 10px;
+  height: 20px;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+.search-bar:focus {
+  outline: 0;
+}
+
+.gallery {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 1000px;
+}
+
+.photo-block {
+  margin: 25px 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */

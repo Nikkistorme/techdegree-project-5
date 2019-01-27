@@ -1,0 +1,12 @@
+
+.gallery {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 1000px
+}
+
+.photo-block {
+  margin: 25px 5px;
+}
