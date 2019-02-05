@@ -5,10 +5,11 @@ $(".search-bar").on("keyup", function() {
 
   for(let i=0; i< $photoSet.length; i+=1) {
     const $descript = $($photoSet[i]).attr("data-title").toLowerCase();
+    const $photoBlocks = $(".photo-block")
     if ($descript.indexOf($input) > -1) {
-      $photoSet[i].style.display = "block";
+      $photoBlocks[i].style.display = "";
     } else {
-      $photoSet[i].style.display = "none";
+      $photoBlocks[i].style.display = "none";
     }
     console.log($input);
   }
