@@ -349,9 +349,12 @@ header {
   padding: 15px;
   margin-bottom: 20px;
   font-size: 1.2em;
+  transition: border-color 0.25s ease;
 }
 .search-bar:focus {
   outline: 0;
+  transition: border-color 0.25s ease;
+  border-color: grey;
 }
 
 .gallery {
@@ -365,6 +368,7 @@ header {
 .photo-block {
   margin: 5px;
   width: 46%;
+  max-width: 200px;
 }
 .photo-block img {
   width: 100%;
