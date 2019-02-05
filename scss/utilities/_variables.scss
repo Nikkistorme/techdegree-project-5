@@ -1,3 +1,10 @@
 
 // FONTS
 $font-primary: 'Lato', sans-serif;
+
+// BREAKPOINTS
+$breakpoints: (
+  'sm': 480px,
+  'med': 768px,
+  'lg': 1400px,
+);

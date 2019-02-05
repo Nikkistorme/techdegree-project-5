@@ -3,10 +3,21 @@
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  max-width: 1000px
+  justify-content: center;
+  max-width: 1000px;
 }
 
 .photo-block {
-  margin: 25px 25px;
+  margin: 5px;
+  width: 46%;
+  & img {
+    width: 100%;
+  }
+  @include mq("med") {
+    width: auto;
+    margin: 25px 25px;
+    & img {
+      width: auto;
+    }
+  }
 }

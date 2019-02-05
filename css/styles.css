@@ -358,12 +358,25 @@ header {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   max-width: 1000px;
 }
 
 .photo-block {
-  margin: 25px 25px;
+  margin: 5px;
+  width: 46%;
+}
+.photo-block img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .photo-block {
+    width: auto;
+    margin: 25px 25px;
+  }
+  .photo-block img {
+    width: auto;
+  }
 }
 
 .lb-data .lb-caption {
@@ -373,29 +386,46 @@ header {
 }
 
 .lb-data .lb-details {
-  width: 100%;
+  width: 90%;
   text-align: center;
   margin-top: 30px;
+  margin-left: 5%;
+}
+@media (min-width: 768px) {
+  .lb-data .lb-details {
+    width: 100%;
+    margin-left: 0px;
+  }
 }
 
 .lb-nav a.lb-prev {
   display: block !important;
-  margin-left: -150px;
   opacity: 1;
+}
+@media (min-width: 1400px) {
+  .lb-nav a.lb-prev {
+    margin-left: -150px;
+  }
 }
 
 .lb-nav a.lb-next {
   display: block !important;
-  margin-right: -150px;
   opacity: 1;
+}
+@media (min-width: 1400px) {
+  .lb-nav a.lb-next {
+    margin-right: -150px;
+  }
 }
 
 .lb-data .lb-close {
   display: none;
 }
 
-.lb-dataContainer {
-  width: 600px !important;
+@media (min-width: 1400px) {
+  .lb-dataContainer {
+    width: 600px !important;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
