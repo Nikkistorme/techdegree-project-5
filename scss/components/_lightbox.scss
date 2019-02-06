@@ -33,7 +33,11 @@
 }
 
 .lb-data .lb-close {
-  display: none;
+  float: none;
+  width: 100%;
+  @include mq("lg") {
+    width: 128%;
+  }
 }
 
 .lb-dataContainer {

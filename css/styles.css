@@ -334,10 +334,9 @@ body {
   text-align: center;
   font-family: "Lato", sans-serif;
   margin: 50px 30px;
-}
-
-header {
-  margin-bottom: 50px;
+  background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
+  background-color: #282828;
+  background-size: 16px 16px;
 }
 
 .search-bar {
@@ -372,6 +371,12 @@ header {
 }
 .photo-block img {
   width: 100%;
+  border-radius: 10%;
+  transition: transform 0.5s ease;
+}
+.photo-block img:hover {
+  transition: transform 0.5s ease;
+  transform: rotate(20deg) scale(1.2, 1.2);
 }
 @media (min-width: 768px) {
   .photo-block {
@@ -423,7 +428,13 @@ header {
 }
 
 .lb-data .lb-close {
-  display: none;
+  float: none;
+  width: 100%;
+}
+@media (min-width: 1400px) {
+  .lb-data .lb-close {
+    width: 128%;
+  }
 }
 
 @media (min-width: 1400px) {
